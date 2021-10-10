@@ -5,7 +5,6 @@ import {getItemFromStore} from '../../util/AsyncStore';
 function ScoreCard({navigation}) {
   const getScore: Promise<number> = async () => {
     const score = await getItemFromStore('SCORE');
-    console.log(score);
     return score ? score : 0;
   };
 

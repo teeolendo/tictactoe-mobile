@@ -18,7 +18,7 @@ describe('Board accepts a move', () => {
     board = new Board(['','','','','','','','',''])
   });
   
-  test('board accepts move', () => {
+  test('can play', () => {
     board.play('X', 1);
     expect(board.cellStatus(1)).toEqual(true);
   });
